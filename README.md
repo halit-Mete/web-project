@@ -5,6 +5,7 @@ kisi ve memleket tanitimi
 
 # Ana sayfa
 - Genel konunun anlaşıldığı ve yönlendirilmelerin yapıldığı kısım
+- Şehir hakkında kısa metin ve resim
 
 # Hakkımda sayfası
 - Kişisel bilgiler ve hobiler v.s gibi bilgiler
