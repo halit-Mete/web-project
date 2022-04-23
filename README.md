@@ -1,4 +1,4 @@
-# Mete
+# Halit Mete Tunç
 kisi ve memleket tanitimi
 
 # içerik
