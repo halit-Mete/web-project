@@ -14,7 +14,7 @@ kisi ve memleket tanitimi
 - Şehrin görselleri
 - Şehir hakkında kısa bilgi
 - Memleket kısmından tarihine erişelebilecek başka bir sayfa
-- slider ile görsellerin tıklandığında resim ile ilgili içeriğe ulaşılması
+- Slider ile görsellerin tıklandığında resim ile ilgili içeriğe ulaşılması
 
 # Mirasımız sayfası
 - Memleketin tarihi ve kültürel özelliklerinin tanıtımı
