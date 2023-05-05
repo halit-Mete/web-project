@@ -26,4 +26,4 @@ kisi ve memleket tanitimi
 - Kullanıcının id password ile girişi
 - Hata olması durumunda tekrarlatılması
 - Doğru girilmesi durumunda hoşgeldiniz mesajı
-- Yapılanların php sayfasına post edilip kontrol edilmesi
+- Yapılanların php sayfasına post edilip kontrol edilmesi s
