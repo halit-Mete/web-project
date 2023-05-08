@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+* {
+
+}
+
+body {
+    /* background-color: #f9f5f3; */
+    font-family: 'Poppins', sans-serif;
+    background-color: #ddd6d1;
+}
+
+.container {
+    width: 98%;
+    margin: auto;
+}
+
+/* ! Header Start */
+
+header {
+    height: 70px;
+    background-color: rgb(2,27,35);
+    border-radius: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+    padding-left: 20px;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #3F8AAA;
+    font-weight: 600;
+    transition: all .25s ease;
+}
+
+header ul a:hover {
+    color: #ffffff;
+}
+
+.login {
+    padding-right: 20px;
+}
+
+.login a{
+    text-decoration: none;
+    color: #0088ff;
+    background-color: rgba(70,134,168,0.2);
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all .25s ease;
+}
+
+.login a:hover{
+    background-color: #303841;
+    color:  #ffffff;
+}
+
+/* ! Header End */
+
+.title {
+    color: #3F8AAA;
+    height: 50vh;
+    padding-top: 200px;
+    margin-top: 10px;
+    background-image: url(images/hakkımda\ wallpaper.jpg);
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    transition: all .25s ease;
+    user-select: none;
+}
+
+.title h1:hover {
+    color:#ffffff;
+}
+
+.orta_alan {
+    display: flex;
+    width: 95%;
+    margin-top: 10px;
+}
+
+.orta_alan img {
+    height: 100px;
+    width: 100px;
+}
+
+/* ! Section Start */
+
+
+
+
+
+
+/* ! Section End */
+
+/* ! Responsive Start */
+
+    @media(max-width:750px){
+        .container {
+            width: 100%;
+            margin: 0 25px 0 25px;
+        }
+
+        header {
+            border-bottom: none;
+        }
+
+        header ul {
+            column-gap: 20px;
+        }
+
+        header ul a {
+            font-weight: 300;
+            font-size: smaller;
+        }
+
+        .login a{
+            margin: 0 25px 0 25px;
+            background-color: rgba(255, 255, 255, 0);
+            font-weight: 300;
+            font-size: smaller;
+        }
+
+        header nav{
+            column-gap: 20px;
+        }
+    }
+
+
+
+/* ! Responsive End */
