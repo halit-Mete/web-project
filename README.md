@@ -2,18 +2,20 @@
 beginner personal promotion project
 
 # Halit Mete Tunç
-kisi ve memleket tanitimi
+B211210064
+Saü Web Tasarım Ödevi
 
 # içerik
+kisi ve memleket tanitimi
 
-# Ana sayfa
+# Anasayfa
 - Genel konunun anlaşıldığı ve yönlendirilmelerin yapıldığı kısım
-- Şehir hakkında kısa metin ve resim
+- kendi hakkımda kısaca bilgilendirilen sayfa
 
-# Hakkımda sayfası
-- Kişisel bilgiler ve hobiler v.s gibi bilgiler
+# Özgeçmiş
+- Kişisel bilgiler , eğitim ve başarıların yazılı olduğu kısım
 
-# ŞehrimMemleketim sayfası
+# Şehrim sayfası
 - Şehrin görselleri
 - Şehir hakkında kısa bilgi
 - Memleket kısmından tarihine erişelebilecek başka bir sayfa
@@ -22,8 +24,11 @@ kisi ve memleket tanitimi
 # Mirasımız sayfası
 - Memleketin tarihi ve kültürel özelliklerinin tanıtımı
 
+# iletişim sayfası
+- Kişinin site sahibi ile iletişime geçmesi için formların doldurulduğu kısım
+
 # Login sayfası
-- Kullanıcının id password ile girişi
+- Kullanıcının öğrenci e-posta ve şifre
 - Hata olması durumunda tekrarlatılması
-- Doğru girilmesi durumunda hoşgeldiniz mesajı
+- Doğru girilmesi durumunda giriş doğru anasayfaya yönlendirme mesajı
 - Yapılanların php sayfasına post edilip kontrol edilmesi
