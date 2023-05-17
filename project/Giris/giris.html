@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/giris.css">
+    <link rel="shortcut icon" href="images/soru işareti.jpg" type="images/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Ben Kimim ?</title>
+</head>
+<body>
+
+  <header class="menu_bar">
+    <nav class="menu">
+      <ul>
+        <li><a href="../Index/index.html">Hakkımda</a></li>
+        <li><a href="../Ozgecmis/ozgecmis.html">Özgeçmiş</a></li>
+        <li><a href="../Sehir/sehir.html">Şehrim</a></li>
+        <li><a href="../Miras/miras.html">Mirasımız</a></li>
+        <li><a href="../Hobi/hobi.html">Hobilerim</a></li>
+        <li><a href="../İletisim/iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <div class="login"><a href="../Giris/giris.html" class="active2">Giriş Yap</a></div>
+    
+    <i class="fa-solid fa-bars list"></i>
+  </header>
+
+  <section class="signup-form">
+    <form action="login.php" method="post" onsubmit="return control()">
+        <h1>Giriş yap</h1>
+        <input class="txt" type="email" placeholder="E-mail" name="email" required>
+        <input class="txt" type="password" placeholder="Şifre" name="password" required>
+        <input class="signup-btn" type="submit" value="Giriş Yap">
+    </form>
+  </section>
+
+  <footer>
+    <p>Oluşturan Halit Mete Tunç | Tüm Haklar Saklıdır</p>
+  </footer>
+
+  <!-- ! Javascript Start -->
+
+  <script src="js/app.js"></script>
+
+  <script>
+		function control()
+		{
+			var email = document.forms["Form"]["email"].value;
+			if (email == "") 
+			{
+				alert("Mail Kısmı Boş bırakılamaz");
+				return false;
+			}
+
+			var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
+			if (forMail.test(email) == false) 
+			{
+				alert("Geçersiz Mail Adresi!!!");
+				return false;
+			}
+
+      var sifre = document.forms["Form"]["password"].value;
+			if (sifre == "") 
+			{
+				alert("sifre boş bırakılamaz");
+				return false;
+			}
+    }	
+  </script>	
+
+  <!-- ! Javascript End -->
+    
+</body>
+</html>

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column; /* Her ayrı etiketi alt alta gösterecek */
+    background-image:url(../images/iletisim.jpg);
+    align-items: center;
+}
+
+body::-webkit-scrollbar {   /* scrollbarın yatay ve dikey alanı */
+    width: 6px;
+    height: 6px;
+    background-color: #eeeeee;
+}
+
+body::-webkit-scrollbar-corner { /* scrollbarın köşesi */
+    background-color: #eeeeee;
+}
+
+body::-webkit-scrollbar-thumb { /* scrollbarın kendisi */
+    background-color: gray;
+    border-radius: 15px;
+}
+
+
+/* ! Header Start */
+
+header {
+    z-index: 1;
+    height: 70px;
+    width: 98%;
+    background-color: rgb(2,27,35);
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;   /* içerisindeki yerleri yan yana dizdirecek / default modu: yan yana direction:column alt alta yazar */
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;   /* bu ve alttaki kod navbarın scroll ile beraber aşağı inmesi */
+    top: 0px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding-left: 30px;
+    margin: 5px;
+}
+
+header nav ul li a {
+    color: #3F8AAA;
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 10px; /* border bottom ı biraz uzaklaştırıyor */
+    transition: color .25s ease;
+}
+
+.active, header nav ul li:hover a {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.login {
+    display: inline-block;
+    padding-right: 20px;
+    margin: 5px;
+}
+
+.login a{
+    color: #3F8AAA;
+    background-color: rgba(70,134,168,0.2);
+    font-size: 17px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all .25s ease;
+}
+
+.login a:hover{
+    background-color: #303841;
+    color:  #ffffff;
+}
+
+.menu_bar i{
+    display: none;
+}
+
+/* ! Header End */
+
+/* ! Section Start */
+
+.contents {
+    display: flex;
+    width: 98%;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.block {
+    width: 40%;
+    height: 85vh;
+    border-radius: 15px;
+    margin: 10px 0 0 0;
+    background-color: rgb(5, 63, 82);
+}
+
+#contact{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.title{
+    color: #3F8AAA;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 30px;
+}
+.contact-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont{
+    width: 100%;
+    padding: 3rem;
+}
+.cont form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont form{
+    width: 100%;
+    margin: 100px 0;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px solid #ffffff;
+    color: #ffffff; 
+    transition: all 0.4s ease;
+}
+
+.cont form{
+    color: #011627;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+form p {
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    width: 100%;
+    height: 70px;
+}
+
+.overflow {
+    overflow: scroll;
+}
+
+.overflow::-webkit-scrollbar {   /* scrollbarın yatay ve dikey alanı */
+    width: 6px;
+    height: 6px;
+    background-color: #eeeeee;
+}
+
+.overflow::-webkit-scrollbar-corner { /* scrollbarın köşesi */
+    background-color: #eeeeee;
+}
+
+.overflow::-webkit-scrollbar-thumb { /* scrollbarın kendisi */
+    background-color: gray;
+    border-radius: 15px;
+}
+
+
+/* ! Section End */
+
+/* ! Footer Start */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3vh;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* ! Footer End */
+
+/* ! Telefon Görünüm Başlangıç */
+
+@media (max-width:800px) {
+    .menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgb(2,27,35);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .menu.active3 {
+        height: 180px;
+    }
+
+    .menu ul {
+        display: block;
+        width: fit-content;
+        margin: 40px auto 0 auto;
+        text-align: center;
+        opacity: 0;
+    }
+
+    .menu.active3 ul {
+        opacity: 1;
+    }
+
+    .login {
+        display: block;
+    }
+
+    .menu_bar i {
+        display: block;
+        color: #ffffff;
+        position: absolute;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        border: 1px solid #ffffff;
+        padding: 5px;
+        border-radius: 15%;}
+    
+    .contents {
+        width: 98%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block {width: 100%;}  
+
+    .cont form{
+        height: 30vh;
+    }
+
+    form p {
+        height: 30vh;
+    }
+}
+
+/* ! Telefon Görünüm Bitiş */
